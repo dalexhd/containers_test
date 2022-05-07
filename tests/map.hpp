@@ -129,14 +129,6 @@ class map_tester : public Tester
 			    mp['b'] = 2;
 			    mp['c'] = 3;
 			    mp['d'] = 4;
-
-			    auto a = mp.begin();
-			    auto b = mp.end();
-			    (void) a;
-			    (void) b;
-			    for (auto it = mp.begin(); it != mp.end(); ++it)
-				    std::cout << it->first << " => " << it->second << std::endl;
-
 			    return (mp.size());
 		    },
 		    [&] {
@@ -146,13 +138,6 @@ class map_tester : public Tester
 			    mp['b'] = 2;
 			    mp['c'] = 3;
 			    mp['d'] = 4;
-			    auto a = mp.begin();
-			    auto b = mp.end();
-			    (void) a;
-			    (void) b;
-			    for (auto it = mp.begin(); it != mp.end(); ++it)
-				    std::cout << it->first << " => " << it->second << std::endl;
-
 			    return (mp.size());
 		    });
 		this->endSection();
